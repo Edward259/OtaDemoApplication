@@ -1,4 +1,4 @@
-package com.onyx.otademoapplication;
+package com.android.otademoapplication;
 
 import org.junit.Test;
 

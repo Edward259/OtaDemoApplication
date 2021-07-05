@@ -1,4 +1,4 @@
-package com.onyx.otademoapplication;
+package com.android.otademoapplication;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.onyx.otademoapplication", appContext.getPackageName());
+        assertEquals("com.android.otademoapplication", appContext.getPackageName());
     }
 }

@@ -1,8 +1,4 @@
-package com.onyx.otademoapplication;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
+package com.android.otademoapplication;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -10,8 +6,12 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 
-import com.onyx.otademoapplication.databinding.ActivityOtaDemoBinding;
-import com.onyx.otademoapplication.model.OTADemoModel;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
+import com.android.otademoapplication.databinding.ActivityOtaDemoBinding;
+import com.android.otademoapplication.model.OTADemoModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +32,17 @@ public class MainActivity extends AppCompatActivity {
         otaDemoModel = new OTADemoModel(this);
         binding.setModel(otaDemoModel);
         registerOtaReceiver();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        otaDemoModel.dispose();
     }
 
     @Override

@@ -4,7 +4,7 @@
     <data>
         <variable
             name="model"
-            type="com.onyx.otademoapplication.model.OTADemoModel" />
+            type="com.android.otademoapplication.model.OTADemoModel" />
     </data>
 
     <LinearLayout
