@@ -1,0 +1,7 @@
+<resources>
+    <string name="update_path">升级包路径：</string>
+    <string name="update">升级</string>
+    <string name="custom_update">自定义升级</string>
+    <string name="custom_update_tip">(自定义升级api只返回升级进度，ui需要额外处理)</string>
+    <string name="progress">进度</string>
+</resources>

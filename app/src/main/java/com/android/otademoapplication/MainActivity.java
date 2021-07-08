@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     if (error != NO_ERROR) {
                         otaDemoModel.setFirmwareUpdateResult(msg);
                     } else {
-                        otaDemoModel.setFirmwareUpdateResult("进度：" + progress + "/100");
+                        otaDemoModel.setFirmwareUpdateResult(getResources().getString(R.string.progress) + progress + "/100");
                     }
                     break;
             }

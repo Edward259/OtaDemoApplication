@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">OtaDemoApplication</string>
+    <string name="update_path">Update Path：</string>
+    <string name="update">Update</string>
+    <string name="custom_update">Custom Update</string>
+    <string name="custom_update_tip">(The custom update api only return update progress, UI need settle by yourself)</string>
+    <string name="progress">progress</string>
 </resources>

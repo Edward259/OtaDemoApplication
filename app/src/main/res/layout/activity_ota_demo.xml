@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="升级包路径："
+                android:text="@string/update_path"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minHeight="40dp"
-                android:text="升级"
+                android:text="@string/update"
                 android:textColor="@android:color/black"
                 android:onClick="@{() -> model.clickOTAUpdate()}" />
 
@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minHeight="40dp"
-                android:text="自定义升级"
+                android:text="@string/custom_update"
                 android:textColor="@android:color/black"
                 android:onClick="@{() -> model.clickCustomOTAUpdate()}"
                 />
@@ -83,7 +83,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="(自定义升级api只返回升级进度，ui需要额外处理)"
+                android:text="@string/custom_update_tip"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:layout_below="@id/button_ota_update_custom"
